@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container-login">
+      <form id="formularioLogin">
+        <h1>Login</h1>
+        <div class="grupo-input">
+          <label for="usuario">Usuário</label>
+          <input type="text" id="usuario" name="usuario" required />
+        </div>
+        <div class="grupo-input">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" name="senha" required />
+        </div>
+        <button type="submit">Entrar</button>
+      </form>
+      <p id="mensagemErro" class="mensagem-erro"></p>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

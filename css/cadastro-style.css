@@ -1,0 +1,92 @@
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Definições de variáveis de cores */
+:root {
+  --cor-fundo: #f0f0f0;
+  --cor-branco: #fff;
+  --cor-sombras: rgba(0, 0, 0, 0.1);
+  --cor-borda: #ccc;
+  --cor-botao: #28a745;
+  --cor-botao-hover: #1a5025;
+  --cor-texto: #333;
+}
+
+/* Estilos principais */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: var(--cor-fundo);
+  font-family: Arial, sans-serif;
+}
+
+.form-container {
+  background-color: var(--cor-branco);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--cor-sombras);
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--cor-texto);
+}
+
+.input-group {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  font-weight: bold;
+  color: var(--cor-texto);
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  max-width: 550px;
+  padding: 0.75rem;
+  border: 1px solid var(--cor-borda);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  width: 100%;
+  max-width: 550px;
+  padding: 1rem;
+  border: none;
+  background-color: var(--cor-botao);
+  color: var(--cor-branco);
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--cor-botao-hover);
+}
