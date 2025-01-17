@@ -7,7 +7,7 @@ document
     const errorMessage = document.getElementById('mensagemErro');
 
     if (username === 'admin' && password === '1234') {
-      window.location.href = 'formulario_cadastro.html';
+      window.location.href = './html/formulario_cadastro.html';
       errorMessage.textContent = '';
     } else {
       errorMessage.textContent = 'Usuário ou senha incorretos.';
