@@ -8,41 +8,64 @@
   </head>
   <body>
     <div class="form-container">
-      <form id="cadastroForm" action="cadastrar_produtos.php" method="POST">
+      <form id="cadastroForm">
         <h1>Cadastro de Produto</h1>
-    
-        <div class="input-group">
-            <label for="nomeProduto">Nome do Produto</label>
-            <input type="text" id="nomeProduto" name="nomeProduto" required />
+
+        <div
+          id="mensagem"
+          style="display: none; color: green; margin-bottom: 15px"
+        >
+          Produto cadastrado com sucesso!
         </div>
-    
+
         <div class="input-group">
-            <label for="valor">Valor</label>
-            <input type="number" step="0.01" id="valor" name="valor" min="0" required />
+          <label for="nomeProduto">Nome do Produto</label>
+          <input type="text" id="nomeProduto" name="nomeProduto" required />
         </div>
-    
+
         <div class="input-group">
-            <label for="quantidade">Quantidade</label>
-            <input type="number" step="1" id="quantidade" name="quantidade" min="0" required />
+          <label for="valor">Valor</label>
+          <input
+            type="number"
+            step="0.01"
+            id="valor"
+            name="valor"
+            min="0"
+            required
+          />
         </div>
-    
+
         <div class="input-group">
-            <label for="fornecedor">Fornecedor</label>
-            <input type="text" id="fornecedor" name="fornecedor" required />
+          <label for="quantidade">Quantidade</label>
+          <input
+            type="number"
+            step="1"
+            id="quantidade"
+            name="quantidade"
+            min="0"
+            required
+          />
         </div>
-    
+
         <div class="input-group">
-            <label for="produtoData">Data</label>
-            <input type="date" id="produtoData" name="produtoData" required />
+          <label for="fornecedor">Fornecedor</label>
+          <input type="text" id="fornecedor" name="fornecedor" required />
         </div>
-    
+
         <div class="input-group">
-            <label for="codigo">Código</label>
-            <input type="number" id="codigo" name="codigo" min="0" required />
+          <label for="produtoData">Data</label>
+          <input type="date" id="produtoData" name="produtoData" required />
         </div>
-    
-        <button type="submit">Cadastrar Produto</button>
-    </form>
+
+        <div class="input-group">
+          <label for="codigo">Código</label>
+          <input type="number" id="codigo" name="codigo" min="0" required />
+        </div>
+
+        <button type="submit" id="submitButton">Cadastrar Produto</button>
+      </form>
     </div>
+
+    <script src="./js/cadastro.js"></script>
   </body>
 </html>
